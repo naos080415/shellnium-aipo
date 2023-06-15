@@ -14,7 +14,7 @@ main() {
     send_keys $username "itahashi"
     send_keys $pass "hogehoge\n"
 
-    sleep 1   # ログイン後の個人ページが開くまで待つ
+    sleep 2   # ログイン後の個人ページが開くまで待つ
 
     local in=$(find_element 'link text' '出勤')
     click $in   # 出勤ボタンをクリック

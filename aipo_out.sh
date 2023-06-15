@@ -14,10 +14,10 @@ main() {
     send_keys $username "itahashi"    # 自分のユーザ名を入力する
     send_keys $pass "hogehoge\n"
 
-    sleep 1   # ログイン後の個人ページが開くまで待つ
+    sleep 2   # ログイン後の個人ページが開くまで待つ
 
     local out=$(find_element 'link text' '退勤')
-    click $in   # 退勤ボタンをクリック
+    click $out   # 退勤ボタンをクリック
     sleep 1
 
     # close the session
